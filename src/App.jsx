@@ -16,14 +16,17 @@ function App() {
       >
         <ParticlesBackground />
       </div>
-      <div className="App" style={{ zIndex: 1 }}>
+      <Container
+        className="position-relative justify-content-center text-center"
+        style={{ zIndex: 1 }}
+      >
         <NavBar />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </div>
+      </Container>
     </Container>
   );
 }

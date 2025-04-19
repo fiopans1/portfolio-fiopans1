@@ -1,22 +1,13 @@
 import Prueba from "../components/Prueba";
 import { Container } from "react-bootstrap";
-import Introduction from "../components/Introduction";
+import Introduction from "../components/Home/Introduction";
+import Timeline from "../components/Home/Timeline";
 
 const HomePage = () => {
   return (
     <Container className="text-white">
-      <Container fluid>
-        <Introduction/>
-      </Container>
-      <Container>
-        <Prueba />
-      </Container>
-      <Container>
-        <Prueba />
-      </Container>
-      <Container>
-        <Prueba />
-      </Container>
+      <Introduction />
+      <Timeline />
     </Container>
   );
 };
