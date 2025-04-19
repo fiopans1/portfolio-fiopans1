@@ -2,12 +2,14 @@ import { useContext } from "react";
 import { sectionContext } from "../components/utils/Context";
 import Prueba from "../components/Prueba";
 import { Container } from "react-bootstrap";
+import Introduction from "../components/Introduction";
+
 const HomePage = () => {
   const references = useContext(sectionContext);
   return (
-    <div>
-      <Container ref={references.home}>
-        <Prueba />
+    <Container className="text-white">
+      <Container fluid>
+        <Introduction reference={references.home}/>
       </Container>
       <Container ref={references.about}>
         <Prueba />
@@ -18,7 +20,7 @@ const HomePage = () => {
       <Container ref={references.contact}>
         <Prueba />
       </Container>
-    </div>
+    </Container>
   );
 };
 

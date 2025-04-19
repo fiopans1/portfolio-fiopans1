@@ -21,6 +21,9 @@ html {
   );
 
   --imp-text-color: #c770f0;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh; /* Esto añade un padding al scroll */
 }
 
 .purple {
@@ -116,4 +119,55 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(222, 130, 235, 0.911);
   border-radius: 12px;
+}
+
+.heading {
+  font-size: 2.4em !important;
+}
+
+.heading-name {
+  font-size: 3em !important;
+}
+.myAvtar {
+  justify-content: center !important;
+}
+
+@media (max-width: 767px) {
+  .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px !important;
+  padding-top: 70px !important;
+}
+
+.home-about-description {
+  color: white !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+}
+
+.home-about-body {
+  padding-top: 50px;
+  font-size: 1.2em !important;
+  text-align: left;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }

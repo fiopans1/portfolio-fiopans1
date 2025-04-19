@@ -38,25 +38,6 @@ const App = () => {
         fluid
       >
         <HomePage/>
-        {/*<h1 className="text-danger">Título principal</h1>
-        * <span
-          style={{ color: "#66fcf1", fontSize: "2rem", fontWeight: "bold" }}
-        >
-          <Typewriter
-            style
-            words={[
-              "Software Developer",
-              "Java Product Developer",
-              "Full Stack Developer",
-            ]}
-            loop={true}
-            cursor
-            cursorStyle="_"
-            typeSpeed={100}
-            deleteSpeed={50}
-            delaySpeed={2000}
-          />
-        </span> */}
       </Container>
     </Container>
     </sectionContext.Provider>
