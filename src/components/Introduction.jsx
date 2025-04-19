@@ -4,9 +4,9 @@ import Tilt from "react-parallax-tilt";
 import myImg from "../assets/foto-personal.jpeg";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineDownload } from "react-icons/ai";
-const Introduction = ({reference}) => {
+const Introduction = () => {
   return (
-    <Container fluid className="home-about-section" ref={reference}>
+    <Container fluid className="home-about-section">
       <Row>
         <Col md={8} className="home-about-description">
           <Row>
@@ -35,7 +35,7 @@ const Introduction = ({reference}) => {
               scalable, and impactful solutions.
             </p>
           </Row>
-          <Row className="mt-5">
+          <Row>
             <Col>
               <Button
                 size="lg"

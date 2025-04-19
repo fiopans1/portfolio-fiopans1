@@ -1,23 +1,20 @@
-import { useContext } from "react";
-import { sectionContext } from "../components/utils/Context";
 import Prueba from "../components/Prueba";
 import { Container } from "react-bootstrap";
 import Introduction from "../components/Introduction";
 
 const HomePage = () => {
-  const references = useContext(sectionContext);
   return (
     <Container className="text-white">
       <Container fluid>
-        <Introduction reference={references.home}/>
+        <Introduction/>
       </Container>
-      <Container ref={references.about}>
+      <Container>
         <Prueba />
       </Container>
-      <Container ref={references.projects}>
+      <Container>
         <Prueba />
       </Container>
-      <Container ref={references.contact}>
+      <Container>
         <Prueba />
       </Container>
     </Container>
