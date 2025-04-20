@@ -2,8 +2,10 @@ import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import myImg from "../../assets/foto-personal.jpeg";
+import pdf from "../../Assets/CV.pdf";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineDownload } from "react-icons/ai";
+import SocialMedia from "./SocialMedia";
 const Introduction = () => {
   return (
     <Container fluid className="home-about-section">
@@ -35,25 +37,22 @@ const Introduction = () => {
               scalable, and impactful solutions.
             </p>
           </Row>
-          <Row>
-            <Col>
+          <Row className="justify-content-center">
+            <Col className="text-center" md={6}>
               <Button
                 size="lg"
-                className="m-3"
                 variant="primary"
                 target="_blank"
+                href={pdf}
                 style={{ maxWidth: "250px" }}
               >
                 <AiOutlineDownload />
                 &nbsp;Download CV
               </Button>
-              <Button size="lg" className="m-3">
-                Hola
-              </Button>
-              <Button size="lg" className="m-3">
-                Hola
-              </Button>
             </Col>
+          </Row>
+          <Row>
+            <SocialMedia />
           </Row>
         </Col>
         <Col md={4}>

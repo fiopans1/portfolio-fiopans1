@@ -8,7 +8,7 @@ import { Done, Work, School } from "@mui/icons-material";
 
 const Timeline = () => {
   return (
-    <Container fluid className="mt-5">
+    <Container fluid className="mt-5 mb-5">
       <Row className="mb-5">
         <h1 className="project-heading">
           Professional <strong className="purple"> Timeline</strong>
