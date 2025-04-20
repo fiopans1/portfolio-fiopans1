@@ -1,6 +1,7 @@
 import NavBar from "./components/navbar/NavBar";
 import HomePage from "./pages/HomePage";
-import { useEffect, useState } from "react";
+import { ProjectsPage } from "./pages/ProjectsPage";
+import ResumePage from "./pages/ResumePage";
 import { Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import { Container } from "react-bootstrap";
@@ -24,6 +25,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/resume" element={<ResumePage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Container>
