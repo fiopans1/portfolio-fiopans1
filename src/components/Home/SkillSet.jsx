@@ -5,11 +5,8 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaNodeJs,
-  FaSass,
   FaGitAlt,
   FaBootstrap,
-  FaFigma,
   FaDatabase,
   FaJava,
   FaPython,
@@ -23,12 +20,13 @@ import {
   SiMongodb,
   SiApachemaven,
   SiThymeleaf,
+  SiRedux,
 } from "react-icons/si";
 
 const SkillSet = () => {
   const progressSkills = [
-    { icon: <FaJava />, name: "Java", percentage: 100, color: "primary" },
-    { icon: <FaReact />, name: "React", percentage: 100, color: "danger" },
+    { icon: <FaJava />, name: "Java", percentage: 95, color: "primary" },
+    { icon: <FaReact />, name: "React", percentage: 95, color: "danger" },
     {
       icon: <SiSpringboot />,
       name: "SpringBoot",
@@ -82,11 +80,13 @@ const SkillSet = () => {
       ),
     },
     {
-        name: "Thymeleaf",
-        icon: (
-          <SiThymeleaf className="skill-icon" style={{ color: "#4479a1" }} />
-        ),
-      },
+      name: "Thymeleaf",
+      icon: <SiThymeleaf className="skill-icon" style={{ color: "#4479a1" }} />,
+    },
+    {
+      name: "Redux",
+      icon: <SiRedux className="skill-icon" style={{ color: "#4479a1" }} />,
+    },
   ];
 
   return (
