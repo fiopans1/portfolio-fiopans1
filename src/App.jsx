@@ -1,6 +1,6 @@
 import NavBar from "./components/navbar/NavBar";
 import HomePage from "./pages/HomePage";
-import { ProjectsPage } from "./pages/ProjectsPage";
+import ProjectsPage from "./pages/ProjectsPage";
 import ResumePage from "./pages/ResumePage";
 import { Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/utils/ScrollToTop";

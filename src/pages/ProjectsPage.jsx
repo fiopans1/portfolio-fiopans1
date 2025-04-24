@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
+import Projects from "../components/Projects/Projects";
 
-export const ProjectsPage = () => {
+const ProjectsPage = () => {
   return (
-    <div>ProjectsPage</div>
-  )
-}
+    <Container fluid className="home-about-section">
+      <Projects />
+    </Container>
+  );
+};
+
+export default ProjectsPage;
