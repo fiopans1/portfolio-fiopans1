@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectsCard";
-import hackaton from "../../assets/Projects/1622214050531.png";
-import practicas_carrera from "../../assets/Projects/WhatsApp-Image-2022-11-02-at-12.10.14.jpeg";
-import portfolio_fiopans1 from "../../assets/Projects/portfolio-fiopans1.png";
-import task_manager from "../../assets/Projects/task-manager.png";
+import hackaton from "../../assets/projects/1622214050531.png";
+import practicas_carrera from "../../assets/projects/WhatsApp-Image-2022-11-02-at-12.10.14.jpeg";
+import portfolio_fiopans1 from "../../assets/projects/portfolio-fiopans1.png";
+import task_manager from "../../assets/projects/task-manager.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
