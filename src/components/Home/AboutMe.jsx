@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutMeDescription from "./AboutMeDescription";
-import SkillSet from "./Skillset";
+import SkillSet from "./SkillSet";
 
 const AboutMe = () => {
   return (
