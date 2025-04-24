@@ -5,7 +5,9 @@ import pdf from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
+
+
 
 function ResumePage() {
   const [width, setWidth] = useState(1200);
@@ -23,6 +25,9 @@ function ResumePage() {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
+            onClick={() => {
+              console.log(pdfjs.version);
+            }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
