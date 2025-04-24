@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import myImg from "../../assets/foto-personal.jpeg";
-import pdf from "../../Assets/CV.pdf";
+import pdf from "../../assets/CV.pdf";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineDownload } from "react-icons/ai";
 import SocialMedia from "./SocialMedia";
