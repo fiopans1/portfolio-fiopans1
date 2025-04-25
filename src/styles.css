@@ -751,3 +751,13 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.tag-project-style {
+  background-color: var(--imp-text-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+}

@@ -46,7 +46,6 @@ function ResumePage() {
             width: "100%", 
             display: "flex", 
             justifyContent: "center",
-            maxHeight: "80vh",
             overflow: "auto"
           }}>
             <Document 
