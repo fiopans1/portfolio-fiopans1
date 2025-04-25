@@ -5,6 +5,7 @@ import ResumePage from "./pages/ResumePage";
 import { Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import { Container } from "react-bootstrap";
+import Footer from "./components/Footer";
 import ParticlesBackground from "./components/utils/ParticlesBackground";
 function App() {
   return (
@@ -29,6 +30,13 @@ function App() {
           <Route path="/resume" element={<ResumePage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+      </Container>
+      <Container
+        fluid
+        className="position-relative justify-content-center text-center"
+        style={{ zIndex: 1 }}
+      >
+        <Footer />
       </Container>
     </Container>
   );
