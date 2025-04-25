@@ -1,4 +1,3 @@
-import Prueba from "../components/Prueba";
 import { Container } from "react-bootstrap";
 import Introduction from "../components/Home/Introduction";
 import Timeline from "../components/Home/Timeline";
