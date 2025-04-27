@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import ParticlesBackground from "./components/utils/ParticlesBackground";
 function App() {
   return (
-    <Container fluid className="App-container">
+    <Container fluid className="App-container p-0">
       <div
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{
@@ -19,6 +19,7 @@ function App() {
         <ParticlesBackground />
       </div>
       <Container
+        fluid
         className="position-relative justify-content-center text-center"
         style={{ zIndex: 1 }}
       >
@@ -31,13 +32,9 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Container>
-      <Container
-        fluid
-        className="position-relative justify-content-center text-center"
-        style={{ zIndex: 1 }}
-      >
+      <div className="position-relative w-100" style={{ zIndex: 1 }}>
         <Footer />
-      </Container>
+      </div>
     </Container>
   );
 }

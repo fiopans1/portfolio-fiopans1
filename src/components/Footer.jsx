@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <Container fluid className="footer">
+    <div className="footer w-100 py-3">
       <Row>
         <Col md="4" className="footer-copywright">
           <h3>If you like you can invite me to a coffe!</h3>
@@ -62,7 +62,7 @@ function Footer() {
           </ul>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 
