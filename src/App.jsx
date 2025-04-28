@@ -7,9 +7,10 @@ import ScrollToTop from "./components/utils/ScrollToTop";
 import { Container } from "react-bootstrap";
 import Footer from "./components/Footer";
 import ParticlesBackground from "./components/utils/ParticlesBackground";
+
 function App() {
   return (
-    <Container fluid className="App-container p-0">
+    <div className="d-flex flex-column min-vh-100">
       <div
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{
@@ -18,24 +19,27 @@ function App() {
       >
         <ParticlesBackground />
       </div>
-      <Container
-        fluid
-        className="position-relative justify-content-center text-center"
-        style={{ zIndex: 1 }}
-      >
-        <NavBar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </Container>
+
+      <div className="flex-grow-1 position-relative" style={{ zIndex: 1 }}>
+        <Container
+          fluid
+          className="position-relative justify-content-center text-center"
+        >
+          <NavBar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </Container>
+      </div>
+
       <div className="position-relative w-100" style={{ zIndex: 1 }}>
         <Footer />
       </div>
-    </Container>
+    </div>
   );
 }
 
