@@ -1,11 +1,7 @@
-<center>
-
 # Personal Portfolio - fiopans1
-</center>
 
 > ![Portfolio screenshot](./portofolio-image.png)
 
-<center>
 
 ![ForTheBadge built-with-love](https://ForTheBadge.com/images/badges/built-with-love.svg)
 ![ForTheBadge made-with-javascript](https://ForTheBadge.com/images/badges/made-with-javascript.svg)
@@ -13,7 +9,8 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/fiopans1/portfolio-fiopans1?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/fiopans1/portfolio-fiopans1?style=social)
-</center>
+
+
 ---
 
 ## ✨ Description
