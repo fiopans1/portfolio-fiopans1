@@ -469,7 +469,8 @@ button:focus {
 .project-card-view {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   color: white !important;
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(96, 165, 250, 0.25) !important;
   opacity: 0.9 !important;
   transition: all 0.3s ease 0s !important;
   height: 100% !important;
@@ -477,7 +478,9 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.25), 0 4px 6px -2px rgba(96, 165, 250, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(96, 165, 250, 0.5) !important;
+  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.3), 0 4px 6px -2px rgba(96, 165, 250, 0.2) !important;
 }
 
 .blog-card {
@@ -489,7 +492,8 @@ button:focus {
 }
 
 .blog-card-view {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(96, 165, 250, 0.25) !important;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   color: white !important;
   transition: all 0.3s ease 0s !important;
@@ -508,7 +512,9 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.25), 0 4px 6px -2px rgba(96, 165, 250, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(96, 165, 250, 0.5) !important;
+  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.3), 0 4px 6px -2px rgba(96, 165, 250, 0.2) !important;
 }
 
 .card-img-top {
@@ -765,93 +771,103 @@ button:focus {
 }
 
 /* --------- */
-/* Skills Progress */
+/* Contact Section */
 /* --------- */
 
-.skills-progress-section {
+.contact-section {
   position: relative !important;
   padding-top: 100px !important;
   padding-bottom: 80px !important;
   background-image: var(--section-background-color) !important;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.contact-form-container:hover {
+  border-color: rgba(96, 165, 250, 0.4);
+  box-shadow: 0 12px 24px rgba(96, 165, 250, 0.15);
+}
+
+.contact-email-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: rgba(96, 165, 250, 0.08);
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-label {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.contact-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(96, 165, 250, 0.3) !important;
+  color: white !important;
+  padding: 12px 15px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-input:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(96, 165, 250, 0.6) !important;
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.15) !important;
   color: white !important;
 }
 
-.skill-progress-item {
-  margin-bottom: 30px !important;
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.skill-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  border-radius: 10px;
-  padding: 25px 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(96, 165, 250, 0.5);
-  box-shadow: 0 8px 16px rgba(96, 165, 250, 0.15);
-}
-
-.skill-icon {
-  font-size: 3em;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.skill-name {
-  color: white;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.progress-container {
+.contact-submit-btn {
   width: 100%;
-  height: 30px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-}
-
-.progress-bar-custom {
-  height: 100%;
-  border-radius: 15px;
-  transition: width 1.5s ease-out;
+  padding: 12px !important;
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 10px;
-  position: relative;
-  box-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
+  justify-content: center;
+  transition: all 0.3s ease !important;
 }
 
-.progress-text {
-  color: white;
-  font-weight: 600;
-  font-size: 0.85em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.3) !important;
 }
 
 @media (max-width: 767px) {
-  .skill-card {
-    padding: 20px 15px;
+  .contact-form-container {
+    padding: 25px;
   }
   
-  .skill-icon {
-    font-size: 2.5em;
-  }
-  
-  .skill-name {
-    font-size: 1.1em;
+  .contact-email-display {
+    font-size: 1em;
+    padding: 15px;
   }
 }
 
