@@ -15,16 +15,16 @@ const Timeline = () => {
         </h1>
       </Row>
       <Row>
-        <VerticalTimeline lineColor="#c770f0">
+        <VerticalTimeline lineColor="#3b82f6">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
-              background: "rgba(171, 34, 200, 0.4)",
-              border: "3px solid #c770f0",
+              background: "rgba(59, 130, 246, 0.2)",
+              border: "3px solid #3b82f6",
             }}
-            contentArrowStyle={{ borderRight: "7px solid  #c770f0" }}
+            contentArrowStyle={{ borderRight: "7px solid  #3b82f6" }}
             date="feb. 2024 - present"
-            iconStyle={{ background: "rgb(70, 48, 155)", color: "#fff" }}
+            iconStyle={{ background: "rgb(29, 78, 216)", color: "#fff" }}
             icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">Denodo</h3>
@@ -41,10 +41,10 @@ const Timeline = () => {
             date="nov. 2022 - may. 2023"
             contentStyle={{
               background: "transparent",
-              border: "3px solid #c770f0",
+              border: "3px solid #3b82f6",
             }}
-            contentArrowStyle={{ borderRight: "7px solid  #c770f0" }}
-            iconStyle={{ background: "rgb(70, 48, 155)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #3b82f6" }}
+            iconStyle={{ background: "rgb(29, 78, 216)", color: "#fff" }}
             icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -62,7 +62,7 @@ const Timeline = () => {
             className="vertical-timeline-element--education"
             contentStyle={{
               background: "transparent",
-              border: "3px solid #c770f0",
+              border: "3px solid #3b82f6",
             }}
             date="sept. 2020 - sept. 2025"
             iconStyle={{ background: "rgb(233, 155, 30)", color: "#fff" }}
