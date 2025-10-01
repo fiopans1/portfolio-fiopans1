@@ -9,32 +9,22 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <Container fluid className="footer">
+    <div className="footer w-100 py-3">
       <Row>
-        <Col md="4" className="footer-section">
-          <h3 className="footer-title">FIOPANS1</h3>
-          <p className="footer-text">
-            Full Stack Developer specializing in Java & React. Building efficient, scalable solutions.
-          </p>
+        <Col md="4" className="footer-copywright">
+          <h3>If you like you can invite me to a coffe!</h3>
         </Col>
-        <Col md="4" className="footer-section">
-          <h3 className="footer-title">Quick Links</h3>
-          <ul className="footer-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <Col md="4" className="footer-copywright">
+          <h3>Page made by fiopans1</h3>
         </Col>
-        <Col md="4" className="footer-section">
-          <h3 className="footer-title">Connect</h3>
+        <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/fiopans1"
+                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
               >
                 <AiFillGithub />
               </a>
@@ -42,9 +32,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://twitter.com/dualwarepc"
+                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
               >
                 <AiOutlineTwitter />
               </a>
@@ -52,9 +42,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/diego-suárez-ramos-003236162/"
+                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
               </a>
@@ -62,9 +52,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/diego_sr16"
+                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
               >
                 <AiFillInstagram />
               </a>
@@ -72,7 +62,7 @@ function Footer() {
           </ul>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

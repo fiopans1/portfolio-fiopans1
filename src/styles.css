@@ -407,105 +407,43 @@ button:focus {
 /* --------- */
 .footer {
   background-color: rgb(10, 15, 28);
-  padding-top: 40px !important;
-  padding-bottom: 30px !important;
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
   width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  margin-top: 0 !important;
+  overflow: hidden !important;
+}
+.footer-copywright {
+  text-align: center !important;
 }
 
-.footer-section {
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
-.footer-title {
-  color: #60a5fa;
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.footer-text {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.95em;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 12px;
-}
-
-.footer-links a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  font-size: 0.95em;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.footer-links a:hover {
-  color: #60a5fa;
-  transform: translateX(5px);
-}
-
-.footer-icons {
-  display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.footer-icons .social-icons a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  background: rgba(96, 165, 250, 0.1);
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  color: #60a5fa !important;
-  font-size: 1.3em;
-  transition: all 0.3s ease;
-}
-
-.footer-icons .social-icons a:hover {
-  background: rgba(96, 165, 250, 0.2);
-  border-color: rgba(96, 165, 250, 0.4);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
-  color: #93c5fd !important;
+.footer-body {
+  z-index: 1;
+  text-align: center !important;
 }
 
 @media (max-width: 767px) {
-  .footer-section {
-    text-align: center;
-    padding: 0 15px;
+  .footer-copywright {
+    text-align: center !important;
   }
-  
-  .footer-icons {
-    justify-content: center;
+
+  .footer-body {
+    text-align: center !important;
   }
-  
-  .footer-links {
-    text-align: center;
-  }
-  
-  .footer-links a:hover {
-    transform: translateX(0);
-  }
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.footer-icons {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
 }
 
 .blockquote-footer {

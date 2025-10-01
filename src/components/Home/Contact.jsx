@@ -39,7 +39,7 @@ function Contact() {
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Col md={12} className="contact-header" style={{ paddingBottom: "20px" }}>
             <h1 className="project-heading">
-              Get In <strong className="purple">Touch</strong>
+              Contact <strong className="purple">Me</strong>
             </h1>
             <p style={{ color: "white", fontSize: "1.1em", textAlign: "center" }}>
               Feel free to <span className="purple">reach out</span> to me. I'm always open to discussing new projects, creative ideas or opportunities.
