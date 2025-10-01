@@ -27,7 +27,7 @@ const ParticlesBackground = () => {
           options={{
             background: {
               color: {
-                value: "#0f172a",
+                value: "#0a0f1c",
               },
             },
             interactivity: {
