@@ -6,18 +6,18 @@ function Github() {
   const customTheme = {
     light: [
       "hsl(0, 0%, 92%)", // Lightest (background)
-      "hsla(272, 85%, 74%, 0.44)", // Light contributions
-      "hsla(272, 85%, 74%, 0.6)", // Medium contributions
-      "hsla(272, 85%, 74%, 0.76)", // High contributions
-      "hsla(272, 85%, 74%, 0.92)", // Highest contributions
+      "hsla(213, 94%, 68%, 0.35)", // Light contributions
+      "hsla(213, 94%, 68%, 0.5)", // Medium contributions
+      "hsla(213, 94%, 68%, 0.65)", // High contributions
+      "hsla(213, 94%, 68%, 0.80)", // Highest contributions
     ],
     // Alternative with hex color as darkest shade
     dark: [
       "#ebebeb", // Lightest (background)
-      "rgba(192, 132, 245, 0.44)", // Light contributions
-      "rgba(192, 132, 245, 0.6)", // Medium contributions
-      "rgba(192, 132, 245, 0.76)", // High contributions
-      "rgba(192, 132, 245, 0.92)", // Highest contributions (based on #c084f5)
+      "rgba(96, 165, 250, 0.35)", // Light contributions
+      "rgba(96, 165, 250, 0.5)", // Medium contributions
+      "rgba(96, 165, 250, 0.65)", // High contributions
+      "rgba(96, 165, 250, 0.80)", // Highest contributions (based on #60a5fa)
     ],
   };
 

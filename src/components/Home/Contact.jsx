@@ -51,7 +51,7 @@ function Contact() {
             </h1>
             <p style={{ marginBottom: "25px" }}>
               Feel free to <span className="purple">connect </span>with me to{" "}
-              <span className="purple">dsuaran@gmail.com</span>
+              <strong><span className="purple">dsuaran@gmail.com</span></strong>
             </p>
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group
