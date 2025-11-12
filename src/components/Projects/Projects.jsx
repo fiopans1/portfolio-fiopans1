@@ -25,7 +25,7 @@ function Projects() {
       description:
         "This is a complete task manager that allow you to create, delete and update your Tasks. Also you can make TODO lists and mark them as done. This project was made with React, Redux, Java, SpringBoot, MySQL and Docker.",
       ghLink: "https://github.com/fiopans1/task-manager",
-      demoLink: "https://github.com/fiopans1/task-manager",
+      demoLink: "https://taskmanager.fiopans1.com",
     },
     {
       id: 2,
