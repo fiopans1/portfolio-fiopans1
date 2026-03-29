@@ -64,7 +64,8 @@ const Introduction = () => {
                 aria-label="Send me a message"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                  document.getElementById("contact")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth" });
                 }}
               >
                 <AiOutlineMail />
