@@ -5,49 +5,70 @@ import myImg from "../../assets/foto-personal.jpg";
 import pdf from "../../assets/CV.pdf";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineDownload } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import SocialMedia from "./SocialMedia";
 const Introduction = () => {
   return (
-    <Container fluid className="home-about-section">
+    <Container fluid className="home-about-section" role="banner">
       <Row>
         <Col md={8} className="home-about-description">
           <Row>
             <h1 style={{ paddingBottom: 15 }} className="heading">
               Hi There!{" "}
-              <span className="wave" role="img" aria-labelledby="wave">
+              <span className="wave" role="img" aria-label="waving hand">
                 👋🏻
               </span>
             </h1>
             <h1 className="heading-name">
               I'M
-              <strong className="main-name purple"> FIOPANS1</strong>
+              <strong className="main-name purple"> DIEGO SUÁREZ RAMOS</strong>
             </h1>
           </Row>
           <Row>
             <p className="home-about-body">
-              I'm a passionate <b className="purple"> full-stack developer</b>{" "}
+              I'm a <b className="purple">Full-Stack Developer</b>{" "}
               specialized in backend with
               <b className="purple"> Java and Spring Boot</b>, and experienced
               in frontend development with
-              <b className="purple"> React</b>. I enjoy{" "}
+              <b className="purple"> React</b>.
+              <br />
+              <br />
+              I build{" "}
               <b className="purple">
-                learning new technologies and tackling technical challenges
+                scalable web applications and RESTful APIs
               </b>{" "}
-              to enhance user experience. My goal is to build efficient,
-              scalable, and impactful solutions.
+              that solve real business problems. Currently working at{" "}
+              <b className="purple">Denodo</b> as a Java Developer.
             </p>
           </Row>
-          <Row className="justify-content-center">
-            <Col className="text-center" md={6}>
+          <Row className="justify-content-center" style={{ gap: "10px" }}>
+            <Col className="text-center" xs="auto">
               <Button
                 size="lg"
                 variant="primary"
                 target="_blank"
                 href={pdf}
                 style={{ maxWidth: "250px" }}
+                aria-label="Download my CV in PDF format"
               >
                 <AiOutlineDownload />
                 &nbsp;Download CV
+              </Button>
+            </Col>
+            <Col className="text-center" xs="auto">
+              <Button
+                size="lg"
+                variant="outline-light"
+                href="#contact"
+                style={{ maxWidth: "250px" }}
+                aria-label="Send me a message"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                <AiOutlineMail />
+                &nbsp;Let's Work Together
               </Button>
             </Col>
           </Row>
@@ -58,7 +79,7 @@ const Introduction = () => {
         <Col md={4}>
           <Row className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="Diego Suárez Ramos - Full-Stack Developer" />
             </Tilt>
           </Row>
           <Row>
@@ -66,9 +87,10 @@ const Introduction = () => {
               <Typewriter
                 style
                 words={[
-                  "Software Developer",
-                  "Java Product Developer",
-                  "Full Stack Developer",
+                  "Full-Stack Developer",
+                  "Java & Spring Boot Expert",
+                  "React Developer",
+                  "Software Engineer",
                 ]}
                 loop={true}
                 cursor

@@ -19,6 +19,7 @@ const SocialMedia = () => {
             target="_blank"
             rel="noreferrer"
             className="icon-colour  home-social-icons"
+            aria-label="GitHub profile"
           >
             <AiFillGithub />
           </a>
@@ -29,6 +30,7 @@ const SocialMedia = () => {
             target="_blank"
             rel="noreferrer"
             className="icon-colour  home-social-icons"
+            aria-label="Twitter profile"
           >
             <AiOutlineTwitter />
           </a>
@@ -39,6 +41,7 @@ const SocialMedia = () => {
             target="_blank"
             rel="noreferrer"
             className="icon-colour  home-social-icons"
+            aria-label="LinkedIn profile"
           >
             <FaLinkedinIn />
           </a>
@@ -49,6 +52,7 @@ const SocialMedia = () => {
             target="_blank"
             rel="noreferrer"
             className="icon-colour home-social-icons"
+            aria-label="Instagram profile"
           >
             <AiFillInstagram />
           </a>
