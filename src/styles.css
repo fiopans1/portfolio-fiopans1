@@ -7,12 +7,12 @@ html {
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(10, 15, 28, 0.75),
-    rgba(12, 17, 30, 0.80)
+    rgba(12, 17, 30, 0.8)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(10, 15, 28, 0.70),
+    rgba(10, 15, 28, 0.7),
     rgba(12, 17, 30, 0.75)
   );
 
@@ -479,7 +479,9 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   color: white !important;
   background-color: rgba(255, 255, 255, 0.02) !important;
   border: 1px solid rgba(96, 165, 250, 0.25) !important;
@@ -492,7 +494,9 @@ button:focus {
   overflow: hidden !important;
   background-color: rgba(255, 255, 255, 0.04) !important;
   border: 1px solid rgba(96, 165, 250, 0.5) !important;
-  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.3), 0 4px 6px -2px rgba(96, 165, 250, 0.2) !important;
+  box-shadow:
+    0 10px 15px -3px rgba(96, 165, 250, 0.3),
+    0 4px 6px -2px rgba(96, 165, 250, 0.2) !important;
 }
 
 .blog-card {
@@ -506,7 +510,9 @@ button:focus {
 .blog-card-view {
   background-color: rgba(255, 255, 255, 0.02) !important;
   border: 1px solid rgba(96, 165, 250, 0.25) !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   color: white !important;
   transition: all 0.3s ease 0s !important;
   height: 100% !important;
@@ -526,7 +532,9 @@ button:focus {
   overflow: hidden !important;
   background-color: rgba(255, 255, 255, 0.04) !important;
   border: 1px solid rgba(96, 165, 250, 0.5) !important;
-  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.3), 0 4px 6px -2px rgba(96, 165, 250, 0.2) !important;
+  box-shadow:
+    0 10px 15px -3px rgba(96, 165, 250, 0.3),
+    0 4px 6px -2px rgba(96, 165, 250, 0.2) !important;
 }
 
 .card-img-top {
@@ -585,7 +593,9 @@ button:focus {
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -792,4 +802,3 @@ button:focus {
   padding-bottom: 80px !important;
   background-image: var(--section-background-color) !important;
 }
-
