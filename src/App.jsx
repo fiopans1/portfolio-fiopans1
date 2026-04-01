@@ -10,7 +10,7 @@ import ParticlesBackground from "./components/utils/ParticlesBackground";
 
 function App() {
   return (
-    <div className="d-flex flex-column" style={{ minHeight: '100dvh' }}>
+    <div className="d-flex flex-column" style={{ height: '100dvh' }}>
       <div
         className="position-fixed top-0 start-0 w-100 h-100"
         style={{
