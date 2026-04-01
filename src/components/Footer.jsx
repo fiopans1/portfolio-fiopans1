@@ -12,7 +12,7 @@ function Footer() {
     <div className="footer w-100 py-3">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>If you like you can invite me to a coffe!</h3>
+          <h3>If you like my work, you can invite me to a coffee!</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Page made by fiopans1</h3>
@@ -25,6 +25,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub profile"
               >
                 <AiFillGithub />
               </a>
@@ -35,6 +36,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter profile"
               >
                 <AiOutlineTwitter />
               </a>
@@ -45,6 +47,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
               >
                 <FaLinkedinIn />
               </a>
@@ -55,6 +58,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram profile"
               >
                 <AiFillInstagram />
               </a>

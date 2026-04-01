@@ -9,7 +9,7 @@ function AboutMeDescription() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am{" "}
             <span className="purple">Diego Suárez Ramos </span>
-            from <span className="purple"> Galician, Spain.</span>
+            from <span className="purple"> Galicia, Spain.</span>
             <br />
             <br />I am a <span className="purple">
               full-stack developer

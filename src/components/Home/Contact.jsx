@@ -47,11 +47,12 @@ function Contact() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
-              Contact <strong className="purple">Me</strong>
+              Let's <strong className="purple">Work Together</strong>
             </h1>
             <p style={{ marginBottom: "25px" }}>
-              Feel free to <span className="purple">connect </span>with me to{" "}
-              <strong><span className="purple">dsuaran@gmail.com</span></strong>
+              Have a project in mind or looking for a <span className="purple">Full-Stack Developer</span>?{" "}
+              Send me a message or reach out at{" "}
+              <strong><a href="mailto:dsuaran@gmail.com" className="purple" style={{ textDecoration: "none" }}>dsuaran@gmail.com</a></strong>
             </p>
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group
@@ -60,9 +61,10 @@ function Contact() {
               >
                 <Form.Control
                   type="text"
-                  placeholder="Enter your name"
+                  placeholder="Your name"
                   name="user_name"
                   required
+                  aria-label="Your name"
                 />
               </Form.Group>
 
@@ -72,9 +74,10 @@ function Contact() {
               >
                 <Form.Control
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Your email"
                   name="user_email"
                   required
+                  aria-label="Your email address"
                 />
               </Form.Group>
 
@@ -85,9 +88,10 @@ function Contact() {
                 <Form.Control
                   as="textarea"
                   rows={3}
-                  placeholder="Enter your message"
+                  placeholder="Tell me about your project or opportunity..."
                   name="message"
                   required
+                  aria-label="Your message"
                 />
               </Form.Group>
 
@@ -96,7 +100,7 @@ function Contact() {
                 type="submit"
                 style={{ marginBottom: "10px", width: "100%" }}
               >
-                Send
+                Send Message
               </Button>
             </Form>
           </Col>

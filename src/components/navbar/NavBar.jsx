@@ -121,6 +121,7 @@ function NavBar() {
                 href="https://github.com/fiopans1"
                 target="_blank"
                 className="fork-btn-inner"
+                aria-label="Visit my GitHub profile"
               >
                 <ImGithub style={{ fontSize: "1.2em" }} />{" "}
               </Button>
