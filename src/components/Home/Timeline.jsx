@@ -23,13 +23,33 @@ const Timeline = () => {
               border: "3px solid #60a5fa",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #60a5fa" }}
-            date="feb. 2024 - present"
+            date="april. 2026 - present"
             iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
             icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">Denodo</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Junior Java Developer
+              Product Developer
+            </h4>
+            <p>
+              Fullstack Development, Java, Spring Boot, React, Thymeleaf,
+              Databases
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              background: "transparent",
+              border: "3px solid #60a5fa",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid  #60a5fa" }}
+            date="feb. 2024 - april. 2026"
+            iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+            icon={<Work />}
+          >
+            <h3 className="vertical-timeline-element-title">Denodo</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Junior Product Developer
             </h4>
             <p>
               Fullstack Development, Java, Spring Boot, React, Thymeleaf,
