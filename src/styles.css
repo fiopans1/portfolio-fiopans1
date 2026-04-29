@@ -64,9 +64,7 @@ a {
 }
 
 .glass-panel,
-.hero-panel,
 .project-card-view,
-.profile-card,
 .footer {
   background: rgba(8, 15, 28, 0.72);
   border: 1px solid rgba(148, 163, 184, 0.16);
@@ -74,45 +72,11 @@ a {
   backdrop-filter: blur(18px);
 }
 
-.hero-panel,
 .glass-panel {
   border-radius: 28px;
   padding: clamp(1.5rem, 2vw, 2.5rem);
 }
 
-.hero-panel {
-  margin-bottom: 1.5rem;
-}
-
-.eyebrow {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: #93c5fd;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
-}
-
-.hero-title,
-.section-title,
-.project-detail-title {
-  font-size: clamp(2.5rem, 6vw, 4.8rem);
-  line-height: 0.98;
-  margin: 0 0 1rem;
-  color: #f8fafc;
-}
-
-.section-title {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-}
-
-.project-detail-title {
-  font-size: clamp(2.3rem, 4vw, 3.8rem);
-}
-
-.hero-copy,
-.section-copy,
-.project-detail-summary,
 .glass-panel p,
 .project-card-copy .card-text,
 .project-markdown p,
@@ -122,17 +86,10 @@ a {
   line-height: 1.75;
 }
 
-.hero-actions,
-.project-detail-actions,
-.project-card-actions,
-.social-pills {
+.project-card-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-}
-
-.hero-actions {
-  margin: 2rem 0;
 }
 
 .btn {
@@ -168,45 +125,6 @@ a {
   background: rgba(255, 255, 255, 0.08) !important;
 }
 
-.hero-meta-grid,
-.content-grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.hero-meta-grid {
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-}
-
-.hero-meta-card,
-.social-pill,
-.focus-list li {
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.hero-meta-card {
-  border-radius: 22px;
-  padding: 1rem 1.1rem;
-  text-align: left;
-}
-
-.hero-meta-card strong {
-  display: block;
-  font-size: 1.4rem;
-  color: #f8fafc;
-}
-
-.hero-meta-card span {
-  color: #94a3b8;
-  font-size: 0.9rem;
-}
-
-.profile-card {
-  border-radius: 28px;
-  overflow: hidden;
-}
-
 .profile-image {
   width: 100%;
   height: 100%;
@@ -215,79 +133,12 @@ a {
   display: block;
 }
 
-.profile-card-body {
-  padding: 1.4rem;
-  text-align: left;
-}
-
-.profile-card-body h2 {
-  font-size: 1.7rem;
-  margin-bottom: 0.8rem;
-}
-
-.profile-kicker,
 .project-card-year {
   color: #93c5fd;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.72rem;
   margin-bottom: 0.85rem;
-}
-
-.social-pill {
-  color: #f8fafc;
-  border-radius: 999px;
-  padding: 0.7rem 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  transition: transform 0.2s ease;
-}
-
-.social-pill:hover {
-  transform: translateY(-2px);
-}
-
-.content-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 1.5rem;
-}
-
-.focus-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem;
-  display: grid;
-  gap: 0.75rem;
-}
-
-.focus-list li {
-  border-radius: 18px;
-  padding: 0.95rem 1rem;
-  color: #e2e8f0;
-}
-
-.inline-link {
-  color: #8ec5ff;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.section-block {
-  margin-bottom: 1.5rem;
-}
-
-.section-heading-wrap {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.page-intro {
-  margin-bottom: 1.5rem;
 }
 
 .project-card-view {
@@ -362,14 +213,6 @@ a {
   flex: 1 1 140px;
 }
 
-.project-detail-page {
-  padding-bottom: 2rem;
-}
-
-.project-detail-hero {
-  margin-bottom: 1.5rem;
-}
-
 .project-detail-image-wrap {
   border-radius: 24px;
   overflow: hidden;
@@ -424,10 +267,6 @@ a {
 
 .project-markdown a {
   color: #8ec5ff;
-}
-
-.project-sidebar-block {
-  margin-top: 2rem;
 }
 
 .purple {
@@ -611,17 +450,6 @@ button:focus,
   background: #07111f;
 }
 
-@media (max-width: 991px) {
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section-heading-wrap {
-    align-items: start;
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 767px) {
   .portfolio-page,
   .resume-section {
@@ -636,11 +464,5 @@ button:focus,
 
   .footer {
     width: calc(100% - 1.5rem);
-  }
-
-  .hero-title,
-  .section-title,
-  .project-detail-title {
-    line-height: 1.05;
   }
 }

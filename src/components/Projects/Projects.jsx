@@ -4,7 +4,7 @@ import { projects } from "../../data/projects";
 
 function Projects() {
   return (
-    <section className="section-block">
+    <section className="mb-4">
       <Container fluid className="p-0">
         <Row className="g-4">
           {projects.map((project) => (

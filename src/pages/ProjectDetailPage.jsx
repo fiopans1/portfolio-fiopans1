@@ -15,16 +15,18 @@ const ProjectDetailPage = () => {
   }
 
   return (
-    <Container className="portfolio-page project-detail-page">
-      <section className="project-detail-hero glass-panel">
+    <Container className="portfolio-page pb-4">
+      <section className="glass-panel mb-4">
         <Row className="g-4 align-items-center">
           <Col lg={6}>
-            <span className="eyebrow">{project.year} · Project details</span>
-            <h1 className="project-detail-title display-5 fw-semibold text-white lh-sm">
+            <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+              {project.year} · Project details
+            </span>
+            <h1 className="display-5 fw-semibold text-white lh-sm mb-3">
               {project.title}
             </h1>
-            <p className="project-detail-summary">{project.description}</p>
-            <div className="project-detail-actions">
+            <p className="text-white-50 fs-5 lh-lg mb-0">{project.description}</p>
+            <div className="d-flex flex-wrap gap-3 mt-4">
               <Button as={Link} to="/projects" variant="outline-light">
                 <FaArrowLeft /> Back to projects
               </Button>
@@ -68,7 +70,9 @@ const ProjectDetailPage = () => {
         </Col>
         <Col lg={4}>
           <aside className="glass-panel project-sidebar">
-            <span className="eyebrow">Stack</span>
+            <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+              Stack
+            </span>
             <div className="tag-cluster">
               {project.tags.map((tag) => (
                 <span key={tag} className="tag-project-style">
@@ -76,8 +80,10 @@ const ProjectDetailPage = () => {
                 </span>
               ))}
             </div>
-            <div className="project-sidebar-block">
-              <span className="eyebrow">Why it matters</span>
+            <div className="mt-4">
+              <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+                Why it matters
+              </span>
               <p>{project.highlight}</p>
             </div>
           </aside>

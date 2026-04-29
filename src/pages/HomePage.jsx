@@ -46,21 +46,23 @@ const HomePage = () => {
   return (
     <>
       <Container className="portfolio-page">
-        <section className="hero-panel">
+        <section className="glass-panel mb-4">
           <Row className="align-items-center g-4">
             <Col lg={7}>
-              <span className="eyebrow">Portfolio · Diego Suárez Ramos</span>
-              <h1 className="hero-title display-4 fw-semibold text-white lh-sm">
+              <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+                Portfolio · Diego Suárez Ramos
+              </span>
+              <h1 className="display-4 fw-semibold text-white lh-sm mb-3">
                 Full-stack development.
                 <br />
                 Built for real products.
               </h1>
-              <p className="hero-copy">
+              <p className="text-white-50 fs-5 lh-lg mb-0">
                 Full-stack developer building robust backends, polished React
                 interfaces, and software experiences that feel simple even when
                 the engineering behind them is not.
               </p>
-              <div className="hero-actions">
+              <div className="d-flex flex-wrap gap-3 my-4">
                 <Button as={Link} to="/projects" variant="primary" size="lg">
                   View projects <FaArrowRight />
                 </Button>
@@ -73,42 +75,52 @@ const HomePage = () => {
                   <AiOutlineDownload /> Resume
                 </Button>
               </div>
-              <div className="hero-meta-grid">
+              <Row className="g-3 mt-1">
                 {quickFacts.map((fact) => (
-                  <div className="hero-meta-card" key={fact.label}>
-                    <strong>{fact.value}</strong>
-                    <span>{fact.label}</span>
-                  </div>
+                  <Col sm={4} key={fact.label}>
+                    <div className="h-100 rounded-4 border border-secondary-subtle bg-white bg-opacity-10 px-3 py-3 text-start">
+                      <strong className="d-block fs-4 text-white">
+                        {fact.value}
+                      </strong>
+                      <span className="text-white-50 small">{fact.label}</span>
+                    </div>
+                  </Col>
                 ))}
-              </div>
+              </Row>
             </Col>
             <Col lg={5}>
-              <div className="profile-card">
+              <div className="glass-panel p-0 overflow-hidden h-100">
                 <img
                   src={myImg}
                   alt="Diego Suárez Ramos"
                   className="profile-image"
                 />
-                <div className="profile-card-body">
-                  <p className="profile-kicker">Currently</p>
-                  <h2>Product Developer at Denodo</h2>
-                  <p>
+                <div className="p-4 text-start">
+                  <p className="d-inline-block mb-2 text-info text-uppercase small fw-semibold">
+                    Currently
+                  </p>
+                  <h2 className="h3 text-white mb-3">
+                    Product Developer at Denodo
+                  </h2>
+                  <p className="text-white-50 lh-lg mb-4">
                     Designing reliable backend solutions while keeping the user
                     experience fast, clear, and maintainable.
                   </p>
-                  <div className="social-pills">
+                  <div className="d-flex flex-wrap gap-2">
                     {socials.map((social) => (
-                      <a
+                      <Button
+                        as="a"
                         key={social.label}
                         href={social.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="social-pill"
+                        variant="outline-light"
+                        size="sm"
                         aria-label={social.label}
                       >
                         {social.icon}
                         <span>{social.label}</span>
-                      </a>
+                      </Button>
                     ))}
                   </div>
                 </div>
@@ -117,43 +129,61 @@ const HomePage = () => {
           </Row>
         </section>
 
-        <section className="content-grid">
-          <article className="glass-panel">
-            <span className="eyebrow">About me</span>
-            <h2 className="h2 fw-semibold text-white mb-3">
-              Engineering with clarity, not noise.
-            </h2>
-            <p>
-              I enjoy turning complex ideas into software that is readable,
-              scalable, and pleasant to use. My strongest area is backend
-              development with Java, but I am equally comfortable shaping the
-              frontend so the final product feels cohesive.
-            </p>
-            <p>
-              I studied Computer Engineering at the University of A Coruña and
-              I am especially motivated by projects where architecture, UX, and
-              product thinking need to work together.
-            </p>
-          </article>
+        <Row className="g-4 mb-4">
+          <Col lg={6}>
+            <article className="glass-panel h-100">
+              <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+                About me
+              </span>
+              <h2 className="h2 fw-semibold text-white mb-3">
+                Engineering with clarity, not noise.
+              </h2>
+              <p>
+                I enjoy turning complex ideas into software that is readable,
+                scalable, and pleasant to use. My strongest area is backend
+                development with Java, but I am equally comfortable shaping the
+                frontend so the final product feels cohesive.
+              </p>
+              <p>
+                I studied Computer Engineering at the University of A Coruña and
+                I am especially motivated by projects where architecture, UX,
+                and product thinking need to work together.
+              </p>
+            </article>
+          </Col>
 
-          <article className="glass-panel">
-            <span className="eyebrow">What I focus on</span>
-            <ul className="focus-list">
-              {focusAreas.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <a className="inline-link" href="mailto:dsuaran@gmail.com">
-              <AiOutlineMail /> dsuaran@gmail.com
-            </a>
-          </article>
-        </section>
+          <Col lg={6}>
+            <article className="glass-panel h-100">
+              <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+                What I focus on
+              </span>
+              <ul className="list-unstyled d-grid gap-3 mb-4">
+                {focusAreas.map((item) => (
+                  <li
+                    key={item}
+                    className="rounded-4 border border-secondary-subtle bg-white bg-opacity-10 px-3 py-3 text-light"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                className="d-inline-flex align-items-center gap-2 text-info"
+                href="mailto:dsuaran@gmail.com"
+              >
+                <AiOutlineMail /> dsuaran@gmail.com
+              </a>
+            </article>
+          </Col>
+        </Row>
 
-        <section className="section-block">
-          <div className="section-heading-wrap">
+        <section className="mb-4">
+          <div className="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
             <div>
-              <span className="eyebrow">Selected work</span>
-              <h2 className="section-title display-6 fw-semibold text-white lh-sm">
+              <span className="d-inline-block mb-3 text-info text-uppercase small fw-semibold">
+                Selected work
+              </span>
+              <h2 className="display-6 fw-semibold text-white lh-sm mb-0">
                 Projects with real context.
               </h2>
             </div>
@@ -170,11 +200,11 @@ const HomePage = () => {
           </Row>
         </section>
 
-        <section className="section-block glass-panel">
+        <section className="glass-panel mb-4">
           <AboutMe />
         </section>
 
-        <section className="section-block glass-panel">
+        <section className="glass-panel mb-4">
           <Timeline />
         </section>
       </Container>
