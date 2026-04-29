@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Card, Col, Container, ProgressBar, Row } from "react-bootstrap";
+import { Card, Col, Container, ProgressBar, Row } from "react-bootstrap";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -90,8 +90,8 @@ const SkillSet = () => {
   ];
 
   return (
-    <Container fluid className="p-0">
-      <Card className="border-secondary bg-dark text-light shadow-sm">
+    <Container fluid className="h-100 p-0">
+      <Card className="h-100 border-secondary bg-dark text-light shadow-sm">
         <Card.Body className="p-4">
           <h3 className="h4 fw-semibold text-white mb-4">
             Professional Skillset
@@ -117,17 +117,13 @@ const SkillSet = () => {
               </div>
             ))}
           </Container>
-          <Row xs={2} sm={3} className="g-3">
+          <Row xs={1} sm={2} className="g-3 mt-1 text-start">
             {cardSkills.map((skill) => (
-              <Col key={skill.name}>
-                <Card className="h-100 border-secondary bg-black text-light">
-                  <Card.Body className="d-flex flex-column align-items-center justify-content-center gap-2 py-3">
-                    <div className="fs-4">{skill.icon}</div>
-                    <Badge bg="secondary" pill>
-                      {skill.name}
-                    </Badge>
-                  </Card.Body>
-                </Card>
+              <Col key={skill.name} className="d-flex align-items-center gap-2">
+                <span className="fs-4 d-inline-flex align-items-center">
+                  {skill.icon}
+                </span>
+                <span>{skill.name}</span>
               </Col>
             ))}
           </Row>

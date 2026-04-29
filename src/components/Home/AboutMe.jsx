@@ -14,11 +14,11 @@ const AboutMe = () => {
           Know Who <span className="text-info">I&apos;M</span>
         </h2>
       </div>
-      <Row className="g-4 align-items-start">
-        <Col md={8}>
+      <Row className="g-4 align-items-stretch">
+        <Col md={8} className="d-flex">
           <AboutMeDescription />
         </Col>
-        <Col md={4}>
+        <Col md={4} className="d-flex">
           <SkillSet />
         </Col>
       </Row>

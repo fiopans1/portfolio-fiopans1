@@ -21,13 +21,13 @@ function ProjectCard({ project }) {
         </div>
       )}
       <Card.Body className="project-card-body">
-        <div className="project-card-copy">
+        <div className="project-card-copy flex-grow-1">
           <p className="project-card-year">{project.year}</p>
           <Card.Title>{project.title}</Card.Title>
           <Card.Subtitle>{project.subtitle}</Card.Subtitle>
           <Card.Text>{project.description}</Card.Text>
         </div>
-        <div className="project-card-actions">
+        <div className="project-card-actions d-flex flex-wrap mt-auto">
           <Button as={Link} to={`/projects/${project.slug}`} variant="primary">
             Details <FaArrowRight />
           </Button>
