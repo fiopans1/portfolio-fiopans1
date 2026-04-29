@@ -13,9 +13,9 @@ import myImg from "../assets/foto-personal.jpg";
 const spotlightProjects = projects.slice(0, 3);
 
 const focusAreas = [
-  "Backend sólido con Java y Spring Boot",
-  "Frontends limpios con React y UX cuidada",
-  "APIs, arquitectura y despliegues listos para producción",
+  "Robust backend systems with Java and Spring Boot",
+  "Full-stack products with React, APIs, and production-ready architecture",
+  "Applied AI features that improve workflows and user experience",
 ];
 
 const socials = [
@@ -51,9 +51,9 @@ const HomePage = () => {
             <Col lg={7}>
               <span className="eyebrow">Portfolio · Diego Suárez Ramos</span>
               <h1 className="hero-title display-4 fw-semibold text-white lh-sm">
-                Minimal code.
+                Full-stack development.
                 <br />
-                Strong products.
+                Built for real products.
               </h1>
               <p className="hero-copy">
                 Full-stack developer building robust backends, polished React
@@ -91,7 +91,7 @@ const HomePage = () => {
                 />
                 <div className="profile-card-body">
                   <p className="profile-kicker">Currently</p>
-                  <h2>Java Developer at Denodo</h2>
+                  <h2>Product Developer at Denodo</h2>
                   <p>
                     Designing reliable backend solutions while keeping the user
                     experience fast, clear, and maintainable.

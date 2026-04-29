@@ -38,7 +38,7 @@ const Introduction = () => {
                 scalable web applications and RESTful APIs
               </b>{" "}
               that solve real business problems. Currently working at{" "}
-              <b className="purple">Denodo</b> as a Java Developer.
+              <b className="purple">Denodo</b> as a Product Developer.
             </p>
           </Row>
           <Row className="justify-content-center" style={{ gap: "10px" }}>
