@@ -1,21 +1,19 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer w-100 py-3">
+    <footer className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>If you like my work, you can invite me to a coffee!</h3>
+          <h3>Open to building thoughtful digital products.</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Page made by fiopans1</h3>
+          <h3>Designed and coded by fiopans1</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -28,17 +26,6 @@ function Footer() {
                 aria-label="GitHub profile"
               >
                 <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/dualwarepc"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter profile"
-              >
-                <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
@@ -66,7 +53,7 @@ function Footer() {
           </ul>
         </Col>
       </Row>
-    </div>
+    </footer>
   );
 }
 

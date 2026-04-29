@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -17,15 +17,18 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const scrollHandler = () => {
+      updateNavbar(window.scrollY >= 20);
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
+
   const handleContactClick = () => {
     if (location.pathname !== "/") {
       navigate("/");
@@ -44,18 +47,17 @@ function NavBar() {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
   }
-  window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={navColour ? "navbar sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <h1 className="purple">FIOPANS1</h1>
+        <Navbar.Brand as={Link} to="/" className="navbar-brand-mark">
+          fiopans1
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -70,7 +72,12 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}
+                className={location.pathname === "/" ? "active-nav" : ""}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -80,6 +87,9 @@ function NavBar() {
                 as={Link}
                 to="/projects"
                 onClick={() => updateExpanded(false)}
+                className={
+                  location.pathname.startsWith("/projects") ? "active-nav" : ""
+                }
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -93,6 +103,7 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/resume" ? "active-nav" : ""}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
@@ -101,6 +112,7 @@ function NavBar() {
               <Nav.Link
                 as="a"
                 onClick={handleContactClick}
+                className="nav-contact-link"
                 style={{ cursor: "pointer", position: "relative" }}
               >
                 <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact
@@ -116,7 +128,7 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item> */}
-            <Nav.Item className="fork-btn">
+            <Nav.Item className="fork-btn nav-github-btn">
               <Button
                 href="https://github.com/fiopans1"
                 target="_blank"
