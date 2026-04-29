@@ -20,7 +20,9 @@ const ProjectDetailPage = () => {
         <Row className="g-4 align-items-center">
           <Col lg={6}>
             <span className="eyebrow">{project.year} · Project details</span>
-            <h1 className="project-detail-title">{project.title}</h1>
+            <h1 className="project-detail-title display-5 fw-semibold text-white lh-sm">
+              {project.title}
+            </h1>
             <p className="project-detail-summary">{project.description}</p>
             <div className="project-detail-actions">
               <Button as={Link} to="/projects" variant="outline-light">

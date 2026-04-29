@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { FaArrowRight, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineDownload, AiOutlineMail, AiFillInstagram } from "react-icons/ai";
 import Contact from "../components/Home/Contact";
+import AboutMe from "../components/Home/AboutMe";
+import Timeline from "../components/Home/Timeline";
 import ProjectCard from "../components/Projects/ProjectsCard";
 import { projects } from "../data/projects";
 import pdf from "../assets/CV.pdf";
@@ -48,7 +50,7 @@ const HomePage = () => {
           <Row className="align-items-center g-4">
             <Col lg={7}>
               <span className="eyebrow">Portfolio · Diego Suárez Ramos</span>
-              <h1 className="hero-title">
+              <h1 className="hero-title display-4 fw-semibold text-white lh-sm">
                 Minimal code.
                 <br />
                 Strong products.
@@ -118,7 +120,9 @@ const HomePage = () => {
         <section className="content-grid">
           <article className="glass-panel">
             <span className="eyebrow">About me</span>
-            <h2>Engineering with clarity, not noise.</h2>
+            <h2 className="h2 fw-semibold text-white mb-3">
+              Engineering with clarity, not noise.
+            </h2>
             <p>
               I enjoy turning complex ideas into software that is readable,
               scalable, and pleasant to use. My strongest area is backend
@@ -149,7 +153,9 @@ const HomePage = () => {
           <div className="section-heading-wrap">
             <div>
               <span className="eyebrow">Selected work</span>
-              <h2 className="section-title">Projects with real context.</h2>
+              <h2 className="section-title display-6 fw-semibold text-white lh-sm">
+                Projects with real context.
+              </h2>
             </div>
             <Button as={Link} to="/projects" variant="outline-light">
               See all projects
@@ -162,6 +168,14 @@ const HomePage = () => {
               </Col>
             ))}
           </Row>
+        </section>
+
+        <section className="section-block glass-panel">
+          <AboutMe />
+        </section>
+
+        <section className="section-block glass-panel">
+          <Timeline />
         </section>
       </Container>
 
