@@ -31,7 +31,12 @@ function ProjectCard({ project }) {
           <Button as={Link} to={`/projects/${project.slug}`} variant="primary">
             Details <FaArrowRight />
           </Button>
-          <Button variant="outline-light" href={project.ghLink} target="_blank">
+          <Button
+            variant="outline-light"
+            href={project.ghLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsGithub /> GitHub
           </Button>
           {project.demoLink && (
@@ -39,6 +44,7 @@ function ProjectCard({ project }) {
               variant="outline-light"
               href={project.demoLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <CgWebsite /> Demo
             </Button>

@@ -25,7 +25,7 @@ function NavBar() {
       updateNavbar(window.scrollY >= 20);
     };
 
-    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler, { passive: true });
     return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 

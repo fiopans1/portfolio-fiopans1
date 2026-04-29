@@ -26,13 +26,19 @@ const ProjectDetailPage = () => {
               <Button as={Link} to="/projects" variant="outline-light">
                 <FaArrowLeft /> Back to projects
               </Button>
-              <Button href={project.ghLink} target="_blank" variant="primary">
+              <Button
+                href={project.ghLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="primary"
+              >
                 <BsGithub /> GitHub
               </Button>
               {project.demoLink && (
                 <Button
                   href={project.demoLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                   variant="outline-light"
                 >
                   <CgWebsite /> Live demo
