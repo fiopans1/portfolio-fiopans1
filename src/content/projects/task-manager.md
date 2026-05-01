@@ -2,24 +2,25 @@
 
 ## Overview
 
-Task Manager is a full-stack application built to organize daily work with a clean CRUD flow, a responsive UI, and a backend prepared for real operational logic.
+Task Manager is a full-stack application to manage personal and shared work through tasks, task lists, teams, and a complete authentication flow.
 
 ## What I built
 
 - A Java + Spring Boot backend with structured REST endpoints
-- A React frontend connected through predictable data flows
-- Redux-based state management for tasks and UI updates
-- Persistence with MySQL and a Docker-friendly local setup
+- A React frontend with Redux for predictable state changes
+- Task creation, custom lists, and team workspaces
+- Authentication with user/password and OAuth2 providers
+- A deployment-oriented setup with Docker-based tooling
 
 ## Why this project matters
 
-This project reflects how I like to build products: a reliable backend, a frontend that stays focused, and features that solve a concrete problem instead of adding noise.
+It reflects the type of product I enjoy building: a solid backend, a focused frontend, and features that solve real day-to-day work without unnecessary complexity.
 
 ## Highlights
 
-1. End-to-end CRUD operations for task management
-2. Clear separation between client, API, and data layers
-3. Ready-to-extend structure for authentication and extra modules
+1. End-to-end CRUD flow for tasks and lists
+2. Shared spaces through team features
+3. Full authentication with classic login and OAuth2
 
 ## Links
 

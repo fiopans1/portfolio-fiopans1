@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository groups many academic projects created during my Computer Engineering degree, covering both theory-heavy and implementation-heavy subjects.
+This repository groups the academic projects I completed during my Computer Engineering degree.
 
 ## Areas covered
 
@@ -14,13 +14,13 @@ This repository groups many academic projects created during my Computer Enginee
 
 ## Why this project matters
 
-It shows the base layer of my engineering profile. Beyond a single polished app, it demonstrates adaptability, technical breadth, and comfort with different types of problems.
+It shows the technical base behind my profile: different languages, different subjects, and a lot of hands-on practice.
 
 ## Highlights
 
 1. Multiple languages and paradigms in one body of work
 2. Strong exposure to core computer science concepts
-3. Evidence of consistency across many practical assignments
+3. Work organized by subject across the degree
 
 ## Links
 
