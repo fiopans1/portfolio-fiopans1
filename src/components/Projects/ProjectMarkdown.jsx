@@ -5,9 +5,7 @@ function ProjectMarkdown({ content }) {
     <ReactMarkdown
       className="project-markdown"
       components={{
-        a: ({ ...props }) => (
-          <a {...props} target="_blank" rel="noreferrer" />
-        ),
+        a: (props) => <a {...props} target="_blank" rel="noreferrer" />,
       }}
     >
       {content}
