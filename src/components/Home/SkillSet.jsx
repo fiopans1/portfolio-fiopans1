@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, ProgressBar } from "react-bootstrap";
+import { Card, Col, Container, ProgressBar, Row } from "react-bootstrap";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -90,40 +90,45 @@ const SkillSet = () => {
   ];
 
   return (
-    <Container fluid className="py-5">
-      <h2 className="purple">Professonal Skillset</h2>
-
-      {/* Sección de barras de progreso */}
-      <Container className="mb-5">
-        {progressSkills.map((skill, index) => (
-          <div key={index} className="mb-4">
-            <div className="d-flex justify-content-between mb-1">
-              <span>
-                {skill.icon}
-                {"      "}
-                {skill.name}
-              </span>
-              <span className="progress-percentage">{skill.percentage}%</span>
-            </div>
-            <ProgressBar
-              now={skill.percentage}
-              variant={skill.color}
-              className="custom-progress"
-              animated
-            />
-          </div>
-        ))}
-      </Container>
-      {/* Sección de cards */}
-      <Container className="mt-5">
-        <Row>
-          {cardSkills.map((skill) => (
-            <Col>
-              {skill.icon} {skill.name}
-            </Col>
-          ))}
-        </Row>
-      </Container>
+    <Container fluid className="h-100 p-0">
+      <Card className="h-100 border-secondary bg-dark text-light shadow-sm">
+        <Card.Body className="p-4">
+          <h3 className="h4 fw-semibold text-white mb-4">
+            Professional Skillset
+          </h3>
+          <Container className="px-0 mb-4">
+            {progressSkills.map((skill, index) => (
+              <div key={index} className="mb-4">
+                <div className="d-flex justify-content-between align-items-center mb-2 small">
+                  <span className="text-light fw-medium">
+                    {skill.icon}
+                    {"      "}
+                    {skill.name}
+                  </span>
+                  <span className="text-info fw-semibold">
+                    {skill.percentage}%
+                  </span>
+                </div>
+                <ProgressBar
+                  now={skill.percentage}
+                  variant={skill.color}
+                  animated
+                />
+              </div>
+            ))}
+          </Container>
+          <Row xs={1} sm={2} className="g-3 mt-1 text-start">
+            {cardSkills.map((skill) => (
+              <Col key={skill.name} className="d-flex align-items-center gap-2">
+                <span className="fs-4 d-inline-flex align-items-center">
+                  {skill.icon}
+                </span>
+                <span>{skill.name}</span>
+              </Col>
+            ))}
+          </Row>
+        </Card.Body>
+      </Card>
     </Container>
   );
 };

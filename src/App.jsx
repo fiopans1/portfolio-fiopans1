@@ -1,44 +1,30 @@
 import NavBar from "./components/navbar/NavBar";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ResumePage from "./pages/ResumePage";
 import { Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import { Container } from "react-bootstrap";
 import Footer from "./components/Footer";
-import ParticlesBackground from "./components/utils/ParticlesBackground";
 
 function App() {
   return (
-    <div className="d-flex flex-column" style={{ height: '100dvh' }}>
-      <div
-        className="position-fixed top-0 start-0 w-100 h-100"
-        style={{
-          zIndex: 0,
-        }}
-      >
-        <ParticlesBackground />
-      </div>
-
-      <div className="flex-grow-1 position-relative" style={{ zIndex: 1 }}>
-        <Container
-          fluid
-          className="position-relative justify-content-center text-center"
-        >
+    <div className="app-shell">
+      <div className="app-shell__content">
+        <Container fluid className="app-container">
           <NavBar />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:slug" element={<ProjectDetailPage />} />
             <Route path="/resume" element={<ResumePage />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Container>
       </div>
-
-      <div className="position-relative w-100" style={{ zIndex: 1 }}>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

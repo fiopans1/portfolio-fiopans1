@@ -5,16 +5,21 @@ import SkillSet from "./SkillSet";
 
 const AboutMe = () => {
   return (
-    <Container fluid className="mt-5 mb-5">
-      <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-        Know Who <strong className="purple">I'M</strong>
-      </h1>
-      <Row>
-        <Col md={8}>
+    <Container fluid className="px-0 py-2">
+      <div className="mb-4 text-start">
+        <div className="text-uppercase text-info small fw-semibold mb-2">
+          About
+        </div>
+        <h2 className="display-6 fw-semibold text-white mb-0">
+          Know Who <span className="text-info">I&apos;M</span>
+        </h2>
+      </div>
+      <Row className="g-4 align-items-stretch">
+        <Col md={8} className="d-flex">
           <AboutMeDescription />
         </Col>
-        <Col md={4}>
-          <SkillSet/>
+        <Col md={4} className="d-flex">
+          <SkillSet />
         </Col>
       </Row>
     </Container>
