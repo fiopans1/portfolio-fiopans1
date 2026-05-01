@@ -23,7 +23,6 @@ body {
 
 html {
   min-height: -webkit-fill-available;
-  height: -webkit-fill-available;
   --section-background-color: linear-gradient(
     180deg,
     rgba(10, 15, 28, 0.9),
