@@ -6,6 +6,8 @@ import hackudcMarkdown from "../content/projects/hackudc.md?raw";
 import portfolioMarkdown from "../content/projects/portfolio.md?raw";
 import taskManagerMarkdown from "../content/projects/task-manager.md?raw";
 import universityMarkdown from "../content/projects/university-projects.md?raw";
+import sandboxAI from "../assets/projects/sandbox-ai.png";
+import sandboxAIMarkdown from "../content/projects/sandbox-ai.md?raw";
 
 export const projects = [
   {
@@ -22,6 +24,27 @@ export const projects = [
     ghLink: "https://github.com/fiopans1/task-manager",
     demoLink: "https://taskmanager.fiopans1.com",
     detailMarkdown: taskManagerMarkdown,
+  },
+  {
+    slug: "sandbox-ai",
+    year: "2025",
+    imgPath: sandboxAI,
+    title: "Sandbox AI",
+    subtitle: "Chatbot to interact with different LLMs",
+    tags: [
+      "Python",
+      "FastAPI",
+      "React",
+      "Docker",
+      "AI Integration",
+      "LangChain",
+    ],
+    description:
+      "Interactive chatbot platform where you can seamlessly switch between different LLMs to experiment, compare responses, and explore AI capabilities in a unified interface.",
+    highlight:
+      "It demonstrates full-stack integration of multiple AI models with a user-friendly frontend, showcasing practical AI application design.",
+    ghLink: "https://github.com/fiopans1/sandbox-ai",
+    detailMarkdown: sandboxAIMarkdown,
   },
   {
     slug: "portfolio-fiopans1",

@@ -9,7 +9,7 @@ Task Manager is a full-stack application to manage personal and shared work thro
 - A Java + Spring Boot backend with structured REST endpoints
 - A React frontend with Redux for predictable state changes
 - Task creation, custom lists, and team workspaces
-- Authentication with user/password and OAuth2 providers
+- Authentication with user/password and OAuth2 providers and cookies HttpOnly
 - A deployment-oriented setup with Docker-based tooling
 
 ## Why this project matters
