@@ -311,6 +311,7 @@ button:focus,
 .navbar {
   padding: 1rem 0 !important;
   background: transparent !important;
+  border-bottom: 1px solid transparent;
   transition:
     background 0.2s ease,
     box-shadow 0.2s ease,
