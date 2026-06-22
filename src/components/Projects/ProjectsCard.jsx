@@ -4,12 +4,20 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import ProjectImage from "./ProjectImage";
 
 function ProjectCard({ project }) {
   return (
     <Card className="project-card-view h-100">
       <Link to={`/projects/${project.slug}`} className="project-card-image-link">
-        <Card.Img variant="top" src={project.imgPath} alt={project.title} />
+        <ProjectImage
+          project={project}
+          className="card-img-top"
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="220"
+        />
       </Link>
       {project.tags && (
         <div className="tag-cluster">

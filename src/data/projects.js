@@ -1,12 +1,17 @@
 import hackaton from "../assets/projects/1622214050531.png";
+import hackatonWebp from "../assets/projects/1622214050531.webp";
 import practicasCarrera from "../assets/projects/practicas-carreras.png";
+import practicasCarreraWebp from "../assets/projects/practicas-carreras.webp";
 import portfolioFiopans1 from "../assets/projects/portfolio-fiopans1.png";
+import portfolioFiopans1Webp from "../assets/projects/portfolio-fiopans1.webp";
 import taskManager from "../assets/projects/task-manager.png";
+import taskManagerWebp from "../assets/projects/task-manager.webp";
 import hackudcMarkdown from "../content/projects/hackudc.md?raw";
 import portfolioMarkdown from "../content/projects/portfolio.md?raw";
 import taskManagerMarkdown from "../content/projects/task-manager.md?raw";
 import universityMarkdown from "../content/projects/university-projects.md?raw";
 import sandboxAI from "../assets/projects/sandbox-ai.png";
+import sandboxAIWebp from "../assets/projects/sandbox-ai.webp";
 import sandboxAIMarkdown from "../content/projects/sandbox-ai.md?raw";
 
 export const projects = [
@@ -14,6 +19,7 @@ export const projects = [
     slug: "task-manager",
     year: "2025",
     imgPath: taskManager,
+    imgWebp: taskManagerWebp,
     title: "Task Manager",
     subtitle: "Full-stack CRUD application",
     tags: ["Java", "Spring Boot", "React", "MySQL", "Docker", "Redux"],
@@ -29,6 +35,7 @@ export const projects = [
     slug: "sandbox-ai",
     year: "2025",
     imgPath: sandboxAI,
+    imgWebp: sandboxAIWebp,
     title: "Sandbox AI",
     subtitle: "Chatbot to interact with different LLMs",
     tags: [
@@ -50,6 +57,7 @@ export const projects = [
     slug: "portfolio-fiopans1",
     year: "2025",
     imgPath: portfolioFiopans1,
+    imgWebp: portfolioFiopans1Webp,
     title: "Portfolio fiopans1",
     subtitle: "Personal React SPA",
     tags: ["React", "Vite", "Bootstrap", "JavaScript", "CSS"],
@@ -65,6 +73,7 @@ export const projects = [
     slug: "university-projects",
     year: "2024",
     imgPath: practicasCarrera,
+    imgWebp: practicasCarreraWebp,
     title: "University Projects",
     subtitle: "Algorithms, systems, and data structures",
     tags: ["Java", "C", "Python", "Algorithms", "Databases"],
@@ -79,6 +88,7 @@ export const projects = [
     slug: "hackudc-codee",
     year: "2024",
     imgPath: hackaton,
+    imgWebp: hackatonWebp,
     title: "HackUDC 2024",
     subtitle: "Code analysis and reporting tool",
     tags: ["Python", "GitHub Actions", "HTML", "JavaScript", "CSS"],

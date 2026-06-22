@@ -77,6 +77,7 @@ function NavBar() {
                 to="/"
                 onClick={() => updateExpanded(false)}
                 className={location.pathname === "/" ? "active-nav" : ""}
+                aria-current={location.pathname === "/" ? "page" : undefined}
               >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
@@ -89,6 +90,9 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className={
                   location.pathname.startsWith("/projects") ? "active-nav" : ""
+                }
+                aria-current={
+                  location.pathname.startsWith("/projects") ? "page" : undefined
                 }
               >
                 <AiOutlineFundProjectionScreen
@@ -104,6 +108,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
                 className={location.pathname === "/resume" ? "active-nav" : ""}
+                aria-current={location.pathname === "/resume" ? "page" : undefined}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>

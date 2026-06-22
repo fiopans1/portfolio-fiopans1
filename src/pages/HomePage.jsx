@@ -7,8 +7,11 @@ import AboutMe from "../components/Home/AboutMe";
 import Timeline from "../components/Home/Timeline";
 import ProjectCard from "../components/Projects/ProjectsCard";
 import { projects } from "../data/projects";
+import { websiteJsonLd, personJsonLd, breadcrumbJsonLd } from "../data/seo";
+import Seo from "../components/Seo";
 import pdf from "../assets/CV.pdf";
 import myImg from "../assets/foto-personal.jpg";
+import myImgWebp from "../assets/foto-personal.webp";
 
 const spotlightProjects = projects.slice(0, 3);
 
@@ -45,6 +48,12 @@ const quickFacts = [
 const HomePage = () => {
   return (
     <>
+      <Seo
+        url="/"
+        type="profile"
+        keywords="Diego Suárez Ramos portfolio, full-stack developer portfolio, Java Spring Boot React developer, software engineer Spain"
+        jsonLd={[websiteJsonLd(), personJsonLd(), breadcrumbJsonLd([{ name: "Home", path: "/" }])]}
+      />
       <Container className="portfolio-page">
         <section className="glass-panel mb-4">
           <Row className="align-items-center g-4">
@@ -90,11 +99,18 @@ const HomePage = () => {
             </Col>
             <Col lg={5}>
               <div className="glass-panel p-0 overflow-hidden h-100">
-                <img
-                  src={myImg}
-                  alt="Diego Suárez Ramos"
-                  className="profile-image"
-                />
+                <picture>
+                  <source srcSet={myImgWebp} type="image/webp" />
+                  <img
+                    src={myImg}
+                    alt="Portrait of Diego Suárez Ramos, Full-Stack Developer"
+                    className="profile-image"
+                    width="800"
+                    height="800"
+                    fetchpriority="high"
+                    decoding="async"
+                  />
+                </picture>
                 <div className="p-4 text-start">
                   <p className="d-inline-block mb-2 text-info text-uppercase small fw-semibold">
                     Currently

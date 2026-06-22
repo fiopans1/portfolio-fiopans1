@@ -4,9 +4,10 @@ import Button from "react-bootstrap/Button";
 import pdf from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import Seo from "../components/Seo";
+import { breadcrumbJsonLd } from "../data/seo";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
-// Configurar el worker correctamente
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
 function ResumePage() {
@@ -28,7 +29,18 @@ function ResumePage() {
 
   return (
     <div>
+      <Seo
+        title="Resume"
+        description="View and download the CV of Diego Suárez Ramos – Full-Stack Developer specialized in Java, Spring Boot and React. Professional experience, education and stack."
+        url="/resume"
+        keywords="Diego Suárez Ramos CV, fiopans1 resume, full-stack developer CV, Java Spring Boot resume"
+        jsonLd={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Resume", path: "/resume" },
+        ])}
+      />
       <Container fluid className="resume-section">
+        <h1 className="visually-hidden">Diego Suárez Ramos – Resume / CV</h1>
         <Row style={{ justifyContent: "center", position: "relative", marginBottom: "20px" }}>
           <Button
             variant="primary"

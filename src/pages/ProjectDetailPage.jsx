@@ -4,7 +4,10 @@ import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import { FaArrowLeft } from "react-icons/fa";
 import ProjectMarkdown from "../components/Projects/ProjectMarkdown";
+import ProjectImage from "../components/Projects/ProjectImage";
 import { getProjectBySlug } from "../data/projects";
+import Seo from "../components/Seo";
+import { breadcrumbJsonLd, projectJsonLd } from "../data/seo";
 
 const ProjectDetailPage = () => {
   const { slug } = useParams();
@@ -16,6 +19,21 @@ const ProjectDetailPage = () => {
 
   return (
     <Container className="portfolio-page pb-4">
+      <Seo
+        title={project.title}
+        description={project.description}
+        url={`/projects/${project.slug}`}
+        type="article"
+        keywords={project.tags.join(", ")}
+        jsonLd={[
+          projectJsonLd(project),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Projects", path: "/projects" },
+            { name: project.title, path: `/projects/${project.slug}` },
+          ]),
+        ]}
+      />
       <section className="glass-panel mb-4">
         <Row className="g-4 align-items-center">
           <Col lg={6}>
@@ -52,10 +70,14 @@ const ProjectDetailPage = () => {
           </Col>
           <Col lg={6}>
             <div className="project-detail-image-wrap">
-              <img
-                src={project.imgPath}
-                alt={project.title}
+              <ProjectImage
+                project={project}
+                alt={`Screenshot of the ${project.title} project – ${project.subtitle}`}
                 className="project-detail-image"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="630"
               />
             </div>
           </Col>

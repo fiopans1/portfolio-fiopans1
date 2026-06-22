@@ -11,6 +11,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fiopans1.com/projects/task-manager</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fiopans1.com/projects/sandbox-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fiopans1.com/projects/portfolio-fiopans1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fiopans1.com/projects/university-projects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fiopans1.com/projects/hackudc-codee</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://fiopans1.com/resume</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
