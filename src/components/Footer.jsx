@@ -10,10 +10,12 @@ function Footer() {
     <footer className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Open to building thoughtful digital products.</h3>
+          <p className="footer-tagline">
+            Open to building thoughtful digital products.
+          </p>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and coded by fiopans1</h3>
+          <p className="footer-tagline">Designed and coded by fiopans1</p>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
